@@ -1,5 +1,5 @@
 
-// const mainDiv = document.getElementById('main-div');
+// const mainContent = document.getElementById('main-content');
 const main = document.querySelector('main');
 const displayBooks = document.getElementById('display-books');
 
@@ -30,5 +30,5 @@ const printBooks = myLibrary.filter(function(book) {
 });
 
 // displayBooks.textContent = `Title: ${book.title}, Author: ${book.author}.`;
-// mainDiv.appendChild(displayBooks);
+// mainContent.appendChild(displayBooks);
 // console.log(printBooks);

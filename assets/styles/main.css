@@ -19,10 +19,11 @@ main {
 }
 
 /* TODO: reword */
-main div:not(#main-div) {
+main div:not(#main-content) {
     margin: 0.5rem;
     padding: 1rem;
-    background-color: aqua;
+    background-color: rgb(43, 41, 41);
+    color: whitesmoke;
     border-radius: 2rem;
     border-color: lightslategray;
     border-width: 2rem;
