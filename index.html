@@ -6,7 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library Demo</title>
 
-    <!-- CSS Stylesheet -->
+    <!-- Google Font(s) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Rose&display=swap" rel="stylesheet">
+
+    <!-- CSS Stylesheet(s) -->
     <link rel="stylesheet" href="./assets/styles/main.css">
 
 </head>
@@ -17,15 +22,48 @@
     </header>
 
     <main>
-        <div id="main-content">
-            <!-- <p id="display-books"></p> -->
-        </div>
+        <!-- <div id="main-content">
+             <p id="display-books"></p> 
+        </div> -->
         
+        <div class="new-book-btn">
+            <button>New Book</button>
+        </div>
+    
+        <!-- A form is displayed after 'New Book' button is clicked/selected -->
+        <!-- TODO: Improve usability -->
+        <div class="form-container">
+            <form action="" method="">
+                <label for="author">Author:</label>
+                <input type="text" name="author" id="author" placeholder="Author">
+                <label for="title">Title:</label>
+                <input type="text" name="title" id="title" placeholder="Title">
+                <label for="numberOfPages">Number of pages:</label>
+                <input type="number" name="numberOfPages" id="numberOfPages" placeholder="Number of pages">
+                <fieldset>
+                    <legend>Book Read Status</legend>
+                    <label for="readBook">Read Book? (Y/N)</label>
+                    <input type="checkbox" name="readBook" id="readBook">
+                    <label for="readingBook">Reading Book? (Y/N)</label>
+                    <input type="checkbox" name="readingBook" id="readingBook">
+                    <label for="planningToReadBook">Plan on reading book? (Y/N)</label>
+                    <input type="checkbox" name="planningToReadBook" id="planningToReadBook">
+                </fieldset>
+
+                <label for="noteBox">Notes:</label>
+                <textarea id="noteBox" name="noteBox" rows="5" cols="33">Once upon a time...
+                </textarea>
+                <!-- <input type="text" name="noteBox" id="noteBox"> -->
+
+                <!-- Make a button with an event listener that adds the book to the library array? -->
+                <button type="button" id="addBookButton">Add Book</button>
+                <!-- <input type="submit" value="Add Book"> -->
+            </form>
+        </div>
+
     </main>
 
-    <div class="new-book-btn">
-        <button>New Book</button>
-    </div>
+
 
     <script src="./assets/scripts/scripts.js"></script>
 </body>
